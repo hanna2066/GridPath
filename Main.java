@@ -1,6 +1,5 @@
 public class Main 
 {
-    private static final int[][] nums = null;
     public static void main (String[] args){
         int [][] nums = {
             {12,3,4,13,5},
@@ -24,6 +23,8 @@ public class Main
     };
     GridPath two = new GridPath(secondGrid);
     System.out.println(two);
+    System.out.println(two.sumPath(1,1));
     }
+  
    
 }

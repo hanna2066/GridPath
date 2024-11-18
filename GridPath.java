@@ -4,6 +4,7 @@ public class GridPath {
     }
 
     private int[][] grid;
+    public char[] sumPath;
 
     public Location getNextLoc(int row, int col) {
         int below = Integer.MAX_VALUE;
@@ -17,7 +18,7 @@ public class GridPath {
     public int sumPath(int row, int col)
      {
        int sum = grid[row][col];
-       while (row<gird.length-1 || col < grid[0].length-1)
+       while (row<grid.length-1 || col < grid[0].length-1)
        {
         Location loc = getNextLoc (row,col);
         row= loc.getRow();
